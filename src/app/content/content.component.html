@@ -1,5 +1,12 @@
-<button class="btn btn-primary" (click)="onToggleParagraph()">Display Details</button>
+<!-- My Solution-->
+<!--<button class="btn btn-primary" (click)="onToggleParagraph()">Display Details</button>
 <p *ngIf="showParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nostrum unde sit aspernatur, eius ipsam eum consequuntur magnam repudiandae amet provident, soluta corporis sint vero totam inventore minima. Earum, minima!</p>
 <div *ngFor="let click of buttonClicks" [ngStyle]="{backgroundColor: buttonClicks.length>=5?'blue':'transparent'}" [ngClass]="{'white-text': (buttonClicks.length+1)>=5}">
     {{click}}
-</div>
+</div>-->
+
+<!-- Instructor Solution -->
+<!--<button class="btn btn-primary" (click)="showSecret = !showSecret">Display Details</button>-->
+<button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+<p *ngIf="showSecret">Secret Password: Tuna</p>
+<div *ngFor="let logItem of log" [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue':'transparent'}" [ngClass]="{'red-text': logItem >= 5}">{{logItem}}</div>
